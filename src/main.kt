@@ -31,6 +31,9 @@ fun demoForLoopWithList() {
     for (novelist in novelists) {
         println(novelist)
     }
+
+    val listThatAllowsEdits = mutableListOf<String>("Alice Munro", "Joy Kogama", "Emile Zola", "Viet Thanh Nguyen")
+    listThatAllowsEdits.removeAt(2)
 }
 
 fun demoForLoopWithNumbers() {
