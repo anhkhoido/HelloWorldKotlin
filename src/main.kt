@@ -9,6 +9,9 @@ fun main(args: Array<String>) {
     demonstrateIfStatementAfterAssignmentSymbol(true)
     demoForLoopWithList()
     demoForLoopWithNumbers()
+
+    println("Laval, a suburb of Montreal, is an anagram: " + isAnagram("laval"))
+    println("My first name is an anagram: " + isAnagram("Anh Khoi"))
 }
 
 fun demonstrateWhenStatement(score: Int) {
@@ -18,7 +21,7 @@ fun demonstrateWhenStatement(score: Int) {
         in 2_000..10_000 -> "Brutal"
         else -> "Death incarnate"
     }
-    println("Your are the $yourLevel level.")
+    println("Your are at the $yourLevel level.")
 }
 
 fun demonstrateIfStatementAfterAssignmentSymbol(condition: Boolean) {
@@ -48,4 +51,11 @@ fun demoForLoopWithNumbers() {
 
     // By increment of 2 steps all the way to ten.
     for (number in 0..10 step 2) println(number)
+}
+
+fun isAnagram(str : String) : Boolean {
+    return when(!str.isNullOrEmpty()) {
+        str.equals(StringBuilder(str).reverse().toString(), true) -> true
+        else -> false
+    }
 }
