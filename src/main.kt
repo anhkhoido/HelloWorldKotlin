@@ -2,9 +2,8 @@
  * The main function.
  *
  * @author Anh Khoi Do
- * @param args  - An array of Strings the user typed at the command line.
  */
-fun main(args: Array<String>) {
+fun main() {
     demonstrateWhenStatement(3000)
     demonstrateIfStatementAfterAssignmentSymbol(true)
     demoForLoopWithList()
