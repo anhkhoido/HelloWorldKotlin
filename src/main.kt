@@ -12,6 +12,7 @@ fun main(args: Array<String>) {
 
     println("Laval, a suburb of Montreal, is an anagram: " + isAnagram("laval"))
     println("My first name is an anagram: " + isAnagram("Anh Khoi"))
+    methodForSet()
 }
 
 fun demonstrateWhenStatement(score: Int) {
@@ -58,4 +59,15 @@ fun isAnagram(str : String) : Boolean {
         str.equals(StringBuilder(str).reverse().toString(), true) -> true
         else -> false
     }
+}
+
+fun methodForSet() {
+    // Upon passing this constant to the println() function,
+    // your set named bunchOfDuplicates will contain one element.
+    val bunchOfDuplicates = setOf<Int>(3, 3, 3, 3)
+    println(bunchOfDuplicates)
+    println("Size of my set named bunchOfDuplicates: ${bunchOfDuplicates.size}")
+
+    val mySetConvertedToList = bunchOfDuplicates.toList()
+    println(mySetConvertedToList)
 }
