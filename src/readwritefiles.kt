@@ -7,6 +7,15 @@ fun main() {
 
     // This line of code tells the program to read the content of a file.
     myFile.forEachLine { println(it) }
+    println()
+
+    // Extract the content of a resource file and create a mutable list.
+    val myListOfCatBreeds = mutableListOf<String>()
+    myFile.forEachLine { myListOfCatBreeds.add(it) }
+
+    for (breed in myListOfCatBreeds) {
+        println(breed)
+    }
 
     // Write to a file
     val fileWhereToStoreInput = File("${directory}/score.txt")
