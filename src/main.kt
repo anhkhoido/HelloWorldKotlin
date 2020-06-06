@@ -1,3 +1,5 @@
+import com.helloworld.model.Firearm
+
 /**
  * The main function.
  *
@@ -12,6 +14,13 @@ fun main() {
     println("Laval, a suburb of Montreal, is an anagram: " + isAnagram("laval"))
     println("My first name is an anagram: " + isAnagram("Anh Khoi"))
     methodForSet()
+
+    println()
+    println()
+
+    val smithAndWesson = Firearm("Smith And Wesson", "M and P", 17)
+    val otherSmithAndWesson = Firearm("Smith And Wesson", "M and P", 17)
+    println("${smithAndWesson} == ${otherSmithAndWesson} : " + smithAndWesson.equals(otherSmithAndWesson))
 }
 
 fun demonstrateWhenStatement(score: Int) {
