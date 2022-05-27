@@ -12,6 +12,6 @@ class Employee(firstName: String, ssn: String, val jobTitle: String, val hourlyR
     }
 
     fun doWork() {
-        println("Doing ${jobTitle} work.")
+        println("I work as a ${jobTitle}.")
     }
 }
