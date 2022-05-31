@@ -15,6 +15,6 @@ fun calculateETA(distance: Double, speed: Double) : Double = distance / speed
 fun calculateExpectedNetWorth(age : Int, income : Int) = (age * income) / 10
 
 fun passFunctionToFilter() {
-    val myList = listOf<String>("Anh Khoi Do", "Patrick Senécal", "Firefox", "Sophie", "Inoue", "Eileen")
+    val myList = listOf("Anh Khoi Do", "Patrick Senécal", "Firefox", "Sophie", "Inoue", "Eileen")
     println(myList.filter(fun(word: String) = !word.contains('a', true)))
 }

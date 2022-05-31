@@ -7,7 +7,7 @@ fun main() {
     println()
 
     // Challenge 2: Remove duplicates from a List<T> of films I recommend!
-    val greatFilms = listOf<String>("Crouching Tiger, Hidden Dragon", "The Farewell", "Where the Truth Lies", "Pontypool", "The Sweet Hereafter", "Pontypool", "Maps to the Stars", "In the Mood for Love", "2046", "The Sweet Hereafter", "Get Out", "Get Out", "Sicario")
+    val greatFilms = listOf("Crouching Tiger, Hidden Dragon", "The Farewell", "Where the Truth Lies", "Pontypool", "The Sweet Hereafter", "Pontypool", "Maps to the Stars", "In the Mood for Love", "2046", "The Sweet Hereafter", "Get Out", "Get Out", "Sicario")
     removeDuplicatesFromCollection(greatFilms)
 }
 

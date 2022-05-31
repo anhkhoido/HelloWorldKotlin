@@ -20,7 +20,7 @@ fun main() {
 
     val smithAndWesson = Firearm("Smith And Wesson", "M and P", 17)
     val otherSmithAndWesson = Firearm("Smith And Wesson", "M and P", 17)
-    println("${smithAndWesson} == ${otherSmithAndWesson} : " + smithAndWesson.equals(otherSmithAndWesson))
+    println("$smithAndWesson == $otherSmithAndWesson : " + (smithAndWesson == otherSmithAndWesson))
 }
 
 fun demonstrateWhenStatement(score: Int) {
@@ -39,12 +39,12 @@ fun demonstrateIfStatementAfterAssignmentSymbol(condition: Boolean) {
 }
 
 fun demoForLoopWithList() {
-    val novelists = listOf<String>("Emile Zola", "Alice Munro", "Joy Kogawa", "Viet Thanh Nguyen")
+    val novelists = listOf("Emile Zola", "Alice Munro", "Joy Kogawa", "Viet Thanh Nguyen")
     for (novelist in novelists) {
         println(novelist)
     }
 
-    val listThatAllowsEdits = mutableListOf<String>("Alice Munro", "Joy Kogama", "Emile Zola", "Viet Thanh Nguyen")
+    val listThatAllowsEdits = mutableListOf("Alice Munro", "Joy Kogama", "Emile Zola", "Viet Thanh Nguyen")
     listThatAllowsEdits.removeAt(2)
 }
 
@@ -63,7 +63,7 @@ fun demoForLoopWithNumbers() {
 }
 
 fun isAnagram(str : String) : Boolean {
-    return when(!str.isNullOrEmpty()) {
+    return when(str.isNotEmpty()) {
         str.equals(StringBuilder(str).reverse().toString(), true) -> true
         else -> false
     }
@@ -72,7 +72,7 @@ fun isAnagram(str : String) : Boolean {
 fun methodForSet() {
     // Upon passing this constant to the println() function,
     // your set named bunchOfDuplicates will contain one element.
-    val bunchOfDuplicates = setOf<Int>(3, 3, 3, 3)
+    val bunchOfDuplicates = setOf(3, 3, 3, 3)
     println(bunchOfDuplicates)
     println("Size of my set named bunchOfDuplicates: ${bunchOfDuplicates.size}")
 
